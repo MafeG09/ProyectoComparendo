@@ -21,6 +21,7 @@ sonarqube {
         property "sonar.projectKey", "MafeG09_ProyectoComparendo"
         property "sonar.organization", "mafeg09"
         property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.sourceEncoding", "UTF-8"
     }
 }
 
@@ -33,6 +34,11 @@ subprojects{
         annotationProcessor 'org.projectlombok:lombok'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         implementation 'org.springframework.boot:spring-boot-starter-validation'
+    }
+    sonarqube {
+        properties {
+            property "sonar.sources", "src"
+        }
     }
 }
 
