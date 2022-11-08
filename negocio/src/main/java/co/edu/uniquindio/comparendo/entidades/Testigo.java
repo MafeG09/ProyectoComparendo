@@ -27,6 +27,7 @@ public class Testigo implements Serializable {
 
     private String telefono;
 
+    //Comparendos
     @OneToMany(mappedBy = "testigo")
     private List<Comparendo> comparendos;
 }
