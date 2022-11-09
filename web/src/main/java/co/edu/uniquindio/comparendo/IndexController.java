@@ -1,14 +1,14 @@
-package co.edu.uniquindio.comparendo.bean;
+package co.edu.uniquindio.comparendo;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping("/")
-public class RootController {
+public class IndexController {
 
     @GetMapping
-    public void getTest(){
-
+    public String index() {
+        return "Hola mundo.";
     }
 
 }
