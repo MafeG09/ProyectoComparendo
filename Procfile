@@ -1,1 +1,1 @@
-web: java -jar negocio/build/libs/negocio-1.0-SNAPSHOT.jar
+web: java -jar web/build/libs/web-1.0-SNAPSHOT.jar
